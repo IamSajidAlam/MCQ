@@ -1,0 +1,27 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  height: 100vh;
+  font-family:SegoeUI-Bold, Segoe UI;
+}
+body.dark{
+  background-color: hsl(0, 0%, 10%);
+}
+.d-block{
+  display: block;
+}
+#root{
+  min-height:100%;
+}
+#root>main{
+  min-height: fit-content;
+  height: calc(100vh - (64px * 2));
+}
+
+img{
+  object-fit: cover;
+  display:block;
+}
